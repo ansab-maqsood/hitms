@@ -1,0 +1,253 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./styles.css";
+
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+
+:root{font-family:"DM Sans",system-ui,sans-serif;color:#e7edf7;background:#070b13;font-synthesis:none;text-rendering:optimizeLegibility;--bg:#070b13;--panel:#0e1522;--panel2:#111a29;--line:#1d2939;--text:#e7edf7;--muted:#8795aa;--accent:#72a7ff;--accent2:#9b8cff;--success:#4fd1a5;--danger:#ff7b8b}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 75% -10%,#182643 0,#0a101b 32%,#070b13 65%);min-height:100vh}button,input{font:inherit}.app-shell{display:flex;min-height:100vh}.sidebar{width:254px;position:fixed;inset:0 auto 0 0;background:rgba(7,11,19,.88);border-right:1px solid var(--line);backdrop-filter:blur(18px);padding:18px 12px;z-index:30;transition:.2s}.sidebar.collapsed{width:78px}.brand{height:54px;display:flex;align-items:center;gap:11px;padding:0 9px;margin-bottom:24px}.brand-mark{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(145deg,#79a8ff,#8c7bff);box-shadow:0 10px 30px #506fff25}.brand strong{font:700 19px "Space Grotesk";display:block;letter-spacing:.5px}.brand span{font-size:10px;color:#78879d;text-transform:uppercase;letter-spacing:1.3px}.sidebar-section-label{font-size:10px;letter-spacing:1.4px;color:#536177;padding:0 12px 9px}.nav-item{width:100%;display:flex;align-items:center;gap:12px;color:#8593a8;background:none;border:0;border-radius:10px;padding:11px 12px;margin:2px 0;cursor:pointer;text-align:left}.nav-item:hover{background:#111b2a;color:#dce7f8}.nav-item.active{background:linear-gradient(90deg,#1b2a43,#142033);color:#fff;box-shadow:inset 3px 0 #75a8ff}.nav-item span{font-size:13px;font-weight:600}.sidebar-footer{position:absolute;left:12px;right:12px;bottom:18px}.security-mini{border:1px solid #1b2939;background:#0d1521;border-radius:12px;padding:11px;display:flex;gap:10px;align-items:center;color:#72dcb9}.security-mini strong,.security-mini span{display:block}.security-mini strong{font-size:11px;color:#dbe6f5}.security-mini span{font-size:9px;color:#66768d;margin-top:2px}.version{font-size:9px;color:#4d5b6d;text-align:center;margin-top:11px}.main{margin-left:254px;width:calc(100% - 254px);transition:.2s}.sidebar.collapsed~.main{margin-left:78px;width:calc(100% - 78px)}.system-banner{position:fixed;top:12px;left:50%;transform:translateX(-50%);z-index:100;background:#111d2e;border:1px solid #28415f;border-radius:12px;padding:9px 12px 9px 14px;display:flex;gap:18px;align-items:center;box-shadow:0 12px 35px #0007;font-size:12px;color:#c9d8eb}.system-banner div{display:flex;align-items:center;gap:8px}.system-banner svg{color:#80aaff}.system-banner button{border:0;background:none;color:#718199;cursor:pointer}.topbar{height:72px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 28px;background:#080d16cc;backdrop-filter:blur(15px);position:sticky;top:0;z-index:20}.top-left,.top-actions,.breadcrumb,.profile{display:flex;align-items:center}.top-left{gap:14px}.breadcrumb{gap:8px;font-size:12px;color:#617087}.breadcrumb strong{color:#dbe5f2}.icon-btn{border:0;background:#0e1623;color:#7f8da2;border:1px solid #1c2838;width:36px;height:36px;border-radius:9px;display:grid;place-items:center;cursor:pointer}.icon-btn:hover{color:#eaf2ff;border-color:#304158}.mobile-menu{display:none}.top-actions{gap:10px}.global-search{height:38px;width:280px;border:1px solid #1d2939;background:#0d1420;border-radius:9px;display:flex;align-items:center;gap:8px;padding:0 10px;color:#66768b}.global-search input{width:100%;border:0;outline:0;background:none;color:#dce7f6;font-size:11px}.global-search kbd{font-size:9px;color:#536277;border:1px solid #253246;padding:2px 5px;border-radius:4px}.notification{position:relative}.notification i{position:absolute;right:8px;top:7px;width:5px;height:5px;border-radius:50%;background:#ff7180}.profile{gap:9px;margin-left:5px}.avatar{width:34px;height:34px;border-radius:10px;background:linear-gradient(145deg,#334d75,#765f9b);display:grid;place-items:center;font-size:10px;font-weight:700;color:#f0f5ff}.avatar.small{width:30px;height:30px;border-radius:8px}.profile-copy strong,.profile-copy span{display:block}.profile-copy strong{font-size:10px;color:#dbe5f2}.profile-copy span{font-size:9px;color:#66768a;margin-top:2px}.content{padding:32px 32px 50px;max-width:1600px;margin:auto}.page-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:25px}.eyebrow{text-transform:uppercase;letter-spacing:1.5px;color:#6e82a0;font-size:9px;font-weight:700;margin-bottom:7px}.page-heading h1{font:700 28px "Space Grotesk";margin:0;letter-spacing:-.7px}.page-heading p{font-size:12px;color:#78879c;margin:8px 0 0}.live-dot{width:6px;height:6px;display:inline-block;border-radius:50%;background:#54d5a8;box-shadow:0 0 0 4px #54d5a815;margin-right:6px}.primary-btn,.ghost-btn{border-radius:9px;padding:10px 13px;display:flex;align-items:center;gap:7px;cursor:pointer;font-size:11px;font-weight:700}.primary-btn{border:1px solid #76a5ff;background:linear-gradient(135deg,#76a7ff,#817fff);color:#07101e;box-shadow:0 8px 24px #638dff20}.ghost-btn{background:#0d1521;border:1px solid #1e2b3d;color:#98a6ba}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:16px}.stat-card,.panel{background:linear-gradient(180deg,#0e1623,#0c131f);border:1px solid var(--line);border-radius:13px;box-shadow:0 18px 45px #00000018}.stat-card{padding:16px}.stat-top{display:flex;justify-content:space-between;color:#526177}.stat-icon{width:33px;height:33px;border-radius:9px;background:#18263a;color:#80aaff;display:grid;place-items:center}.stat-value{font:700 26px "Space Grotesk";margin-top:14px}.stat-label{font-size:11px;color:#8492a6;margin-top:3px}.stat-delta{font-size:9px;color:#55d2a8;margin-top:10px}.dashboard-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:16px;margin-bottom:16px}.panel{padding:18px}.panel-head{display:flex;justify-content:space-between;align-items:flex-start}.panel-head h2{font:600 15px "Space Grotesk";margin:0}.panel-head p{font-size:10px;color:#66758a;margin:5px 0 0}.chart{height:205px;display:flex;align-items:flex-end;gap:12px;padding:25px 8px 0}.bar-wrap{height:100%;flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:8px}.bar{width:100%;max-width:27px;border-radius:6px 6px 3px 3px;background:linear-gradient(180deg,#76a7ff,#556ee4);opacity:.9}.bar-wrap span{font-size:8px;color:#536177}.chart-legend{border-top:1px solid #182333;margin-top:10px;padding-top:11px;display:flex;gap:16px;align-items:center;font-size:9px;color:#66768c}.chart-legend strong{margin-left:auto;color:#54d3a8}.legend-dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:4px}.legend-dot.primary{background:#77a7ff}.legend-dot.muted{background:#3b4656}.deadline{display:flex;align-items:center;gap:11px;padding:14px 0;border-bottom:1px solid #182333}.deadline:last-child{border-bottom:0}.date-box{width:42px;height:43px;border-radius:8px;background:#121e2e;border:1px solid #213047;display:grid;place-items:center;align-content:center}.date-box strong{font:700 15px "Space Grotesk"}.date-box span{font-size:7px;color:#6c7c91;letter-spacing:1px}.deadline>div:nth-child(2){flex:1}.deadline>div:nth-child(2) strong,.deadline>div:nth-child(2) span{display:block}.deadline>div:nth-child(2) strong{font-size:10px}.deadline>div:nth-child(2) span{font-size:9px;color:#64748a;margin-top:4px}.tag,.section-pill{font-size:8px;border:1px solid #26354a;border-radius:999px;padding:4px 7px;color:#8da0b8;background:#111b2a}.tag.danger{color:#ff929f;border-color:#52303a;background:#24151b}.recent-panel{padding:0;overflow:hidden}.recent-panel .panel-head{padding:18px 18px 13px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:700px}th{text-align:left;color:#526177;font-size:8px;text-transform:uppercase;letter-spacing:1px;font-weight:700;padding:11px 18px;border-top:1px solid #182333;border-bottom:1px solid #182333}td{padding:12px 18px;border-bottom:1px solid #151f2d;font-size:10px;color:#9aa8bb}tbody tr:hover{background:#101927}td:last-child,th:last-child{text-align:right}.activity-name,.student-cell{display:flex;align-items:center;gap:9px}.activity-name strong,.student-cell strong{color:#d5deeb;font-size:10px}.tiny-icon{width:28px;height:28px;border-radius:7px;background:#17253a;color:#77a7ff;display:grid;place-items:center}.status{color:#58d5ad;display:inline-flex;gap:5px;align-items:center;font-size:9px}.muted{color:#5f6e82}.toolbar{display:flex;gap:8px;margin:-7px 0 16px}.filter-search{flex:1;max-width:360px;height:38px;border:1px solid #1e2b3d;background:#0d1521;border-radius:9px;display:flex;align-items:center;gap:8px;padding:0 11px;color:#65748a}.filter-search input{border:0;outline:0;background:none;color:#dce7f6;font-size:11px;width:100%}.mono{font-family:ui-monospace,monospace;color:#9cbcff}.module-empty{min-height:390px;border:1px dashed #26364b;background:#0b121d;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px}.empty-icon{width:58px;height:58px;border-radius:16px;background:#17243a;color:#7ba8ff;display:grid;place-items:center;margin-bottom:15px}.module-empty h2{font:600 19px "Space Grotesk";margin:0}.module-empty p{max-width:600px;color:#748399;font-size:11px;line-height:1.7}.build-list{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:12px}.build-list span{display:flex;align-items:center;gap:5px;background:#101a28;border:1px solid #203047;border-radius:999px;padding:6px 9px;font-size:9px;color:#7e91aa}.build-list svg{color:#51d3a7}.notification+.profile{margin-left:3px}@media(max-width:1100px){.global-search{width:190px}.profile-copy{display:none}.stats-grid{grid-template-columns:repeat(2,1fr)}.dashboard-grid{grid-template-columns:1fr}}@media(max-width:800px){.sidebar{transform:translateX(-100%);width:254px}.sidebar.mobile-open{transform:translateX(0)}.sidebar.collapsed{width:254px}.sidebar.collapsed .brand div,.sidebar.collapsed .nav-item span,.sidebar.collapsed .sidebar-section-label,.sidebar.collapsed .security-mini div{display:block}.main,.sidebar.collapsed~.main{margin-left:0;width:100%}.desktop-collapse{display:none}.mobile-menu{display:grid}.topbar{padding:0 14px}.global-search{display:none}.content{padding:24px 15px}.system-banner{top:8px;width:calc(100% - 20px)}.page-heading{align-items:flex-start;flex-direction:column}.page-heading h1{font-size:24px}.stats-grid{grid-template-columns:1fr 1fr}.toolbar{flex-wrap:wrap}.filter-search{max-width:none;flex-basis:100%}}@media(max-width:520px){.stats-grid{grid-template-columns:1fr}.profile{display:none}.chart{gap:6px}.panel{padding:14px}.deadline-panel{padding-bottom:5px}}
+
+/// <reference types="vite/client" />
+interface Env {
+  ASSETS: Fetcher;
+}
+
+export default {
+  async fetch(request: Request, env: Env): Promise<Response> {
+    return env.ASSETS.fetch(request);
+  },
+};
+
+import { useMemo, useState } from "react";
+import {
+  Activity, AlertCircle, BarChart3, Bell, BookOpen, CalendarDays,
+  CheckCircle2, ChevronDown, ClipboardCheck, Clock3, FileText,
+  GraduationCap, LayoutDashboard, Menu, MessageSquare, MoreHorizontal,
+  PanelLeftClose, PanelLeftOpen, Plus, Search, Settings, ShieldCheck,
+  Sparkles, Users, X
+} from "lucide-react";
+import { supabaseConfigured } from "./lib/supabase";
+
+type View =
+  | "Dashboard" | "Students" | "Faculty" | "Courses" | "Sections"
+  | "Assessments" | "Results" | "Attendance" | "Reports" | "Audit Log" | "Settings";
+
+const nav: { label: View; icon: typeof LayoutDashboard }[] = [
+  { label: "Dashboard", icon: LayoutDashboard },
+  { label: "Students", icon: Users },
+  { label: "Faculty", icon: GraduationCap },
+  { label: "Courses", icon: BookOpen },
+  { label: "Sections", icon: ClipboardCheck },
+  { label: "Assessments", icon: FileText },
+  { label: "Results", icon: BarChart3 },
+  { label: "Attendance", icon: CalendarDays },
+  { label: "Reports", icon: Activity },
+  { label: "Audit Log", icon: ShieldCheck },
+  { label: "Settings", icon: Settings },
+];
+
+const stats = [
+  { label: "Active Students", value: "1,248", delta: "+6.8%", icon: Users },
+  { label: "Faculty Members", value: "86", delta: "+3 this term", icon: GraduationCap },
+  { label: "Active Courses", value: "142", delta: "Across 12 programs", icon: BookOpen },
+  { label: "Assessments", value: "38", delta: "9 due this week", icon: ClipboardCheck },
+];
+
+const recent = [
+  ["Midterm — Web Engineering", "SWC", "82 submissions", "Today, 10:42"],
+  ["Case Study — Financial Systems", "FinTech", "31 submissions", "Today, 09:18"],
+  ["Attendance — Database Systems", "CSB", "38 / 40 present", "Yesterday"],
+  ["Result Published — Software Design", "SWA", "40 students", "Yesterday"],
+];
+
+const students = [
+  ["CS-2026-001", "Ayesha Khan", "Computer Science", "CSB", "Active", "92%"],
+  ["CS-2026-014", "Muhammad Hamza", "Computer Science", "CSB", "Active", "88%"],
+  ["SW-2026-007", "Hina Ahmed", "Software Engineering", "SWC", "Active", "95%"],
+  ["FT-2026-003", "Ali Raza", "FinTech", "FT-A", "Active", "84%"],
+  ["MA-2026-019", "Sara Noor", "Mathematics", "MA-A", "Active", "91%"],
+];
+
+function App() {
+  const [view, setView] = useState<View>("Dashboard");
+  const [collapsed, setCollapsed] = useState(false);
+  const [mobileNav, setMobileNav] = useState(false);
+  const [search, setSearch] = useState("");
+  const [notice, setNotice] = useState<string | null>("HITMS foundation is ready. Database connection can be enabled next.");
+
+  const filteredStudents = useMemo(
+    () => students.filter(row => row.join(" ").toLowerCase().includes(search.toLowerCase())),
+    [search]
+  );
+
+  function openView(v: View) {
+    setView(v);
+    setMobileNav(false);
+  }
+
+  return (
+    <div className="app-shell">
+      {notice && (
+        <div className="system-banner">
+          <div><Sparkles size={16} /> <span>{notice}</span></div>
+          <button onClick={() => setNotice(null)} aria-label="Dismiss"><X size={16} /></button>
+        </div>
+      )}
+
+      <aside className={`sidebar ${collapsed ? "collapsed" : ""} ${mobileNav ? "mobile-open" : ""}`}>
+        <div className="brand">
+          <div className="brand-mark"><GraduationCap size={22} /></div>
+          {!collapsed && <div><strong>HITMS</strong><span>University Platform</span></div>}
+        </div>
+
+        <div className="sidebar-section-label">{!collapsed && "WORKSPACE"}</div>
+        <nav>
+          {nav.map(({ label, icon: Icon }) => (
+            <button
+              key={label}
+              className={`nav-item ${view === label ? "active" : ""}`}
+              onClick={() => openView(label)}
+              title={collapsed ? label : undefined}
+            >
+              <Icon size={18} />
+              {!collapsed && <span>{label}</span>}
+            </button>
+          ))}
+        </nav>
+
+        <div className="sidebar-footer">
+          <div className="security-mini">
+            <ShieldCheck size={18} />
+            {!collapsed && <div><strong>Security</strong><span>Role-based access</span></div>}
+          </div>
+          {!collapsed && <div className="version">HITMS v0.1 Foundation</div>}
+        </div>
+      </aside>
+
+      <main className="main">
+        <header className="topbar">
+          <div className="top-left">
+            <button className="icon-btn mobile-menu" onClick={() => setMobileNav(!mobileNav)}><Menu size={20} /></button>
+            <button className="icon-btn desktop-collapse" onClick={() => setCollapsed(!collapsed)}>
+              {collapsed ? <PanelLeftOpen size={20} /> : <PanelLeftClose size={20} />}
+            </button>
+            <div className="breadcrumb"><span>HITMS</span><ChevronDown size={14} /><strong>{view}</strong></div>
+          </div>
+          <div className="top-actions">
+            <div className="global-search">
+              <Search size={17} />
+              <input value={search} onChange={e => setSearch(e.target.value)} placeholder="Search students, courses..." />
+              <kbd>⌘ K</kbd>
+            </div>
+            <button className="icon-btn notification"><Bell size={19} /><i /></button>
+            <div className="profile">
+              <div className="avatar">SA</div>
+              <div className="profile-copy"><strong>Engineer Syed Ansab Maqsood</strong><span>Administrator</span></div>
+              <ChevronDown size={15} />
+            </div>
+          </div>
+        </header>
+
+        <div className="content">
+          {view === "Dashboard" ? (
+            <Dashboard openView={openView} />
+          ) : view === "Students" ? (
+            <Students rows={filteredStudents} />
+          ) : (
+            <ModuleView title={view} />
+          )}
+        </div>
+      </main>
+    </div>
+  );
+}
+
+function Dashboard({ openView }: { openView: (v: View) => void }) {
+  return (
+    <>
+      <section className="page-heading">
+        <div>
+          <div className="eyebrow"><span className="live-dot" /> Academic Operations</div>
+          <h1>Good evening, Engineer Ansab.</h1>
+          <p>Here is your university overview for the current academic term.</p>
+        </div>
+        <button className="primary-btn" onClick={() => openView("Assessments")}><Plus size={17} /> New Assessment</button>
+      </section>
+
+      <section className="stats-grid">
+        {stats.map(({ label, value, delta, icon: Icon }) => (
+          <div className="stat-card" key={label}>
+            <div className="stat-top"><div className="stat-icon"><Icon size={19} /></div><MoreHorizontal size={18} /></div>
+            <div className="stat-value">{value}</div>
+            <div className="stat-label">{label}</div>
+            <div className="stat-delta"><span>↗</span> {delta}</div>
+          </div>
+        ))}
+      </section>
+
+      <section className="dashboard-grid">
+        <div className="panel activity-panel">
+          <div className="panel-head"><div><h2>Academic Activity</h2><p>Live overview of recent academic operations</p></div><button className="ghost-btn">This week <ChevronDown size={14}/></button></div>
+          <div className="chart">
+            {[42,58,47,76,62,88,71,92,67,81,74,96].map((h,i) => <div className="bar-wrap" key={i}><div className="bar" style={{height:`${h}%`}} /><span>{["M","T","W","T","F","S","M","T","W","T","F","S"][i]}</span></div>)}
+          </div>
+          <div className="chart-legend"><span><i className="legend-dot primary" /> Submissions</span><span><i className="legend-dot muted" /> Attendance</span><strong>+14.6% vs last week</strong></div>
+        </div>
+
+        <div className="panel deadline-panel">
+          <div className="panel-head"><div><h2>Upcoming</h2><p>Deadlines & scheduled events</p></div><Clock3 size={18}/></div>
+          <div className="deadline"><div className="date-box"><strong>02</strong><span>NOV</span></div><div><strong>Midterm Result Submission</strong><span>All sections · 04:00 PM</span></div><span className="tag danger">2 days</span></div>
+          <div className="deadline"><div className="date-box"><strong>04</strong><span>NOV</span></div><div><strong>Viva / Presentation Review</strong><span>SWB · 10:00 AM</span></div><span className="tag">4 days</span></div>
+          <div className="deadline"><div className="date-box"><strong>07</strong><span>NOV</span></div><div><strong>Online Assessment Window</strong><span>CSB · 11:00 AM</span></div><span className="tag">1 week</span></div>
+        </div>
+      </section>
+
+      <section className="panel recent-panel">
+        <div className="panel-head"><div><h2>Recent Academic Operations</h2><p>Latest activity across departments and sections</p></div><button className="ghost-btn">View all <ChevronDown size={14}/></button></div>
+        <div className="table-wrap">
+          <table><thead><tr><th>Activity</th><th>Section</th><th>Status</th><th>Updated</th><th></th></tr></thead>
+          <tbody>{recent.map((r,i)=><tr key={i}><td><div className="activity-name"><div className="tiny-icon"><FileText size={15}/></div><strong>{r[0]}</strong></div></td><td><span className="section-pill">{r[1]}</span></td><td><span className="status"><CheckCircle2 size={14}/>{r[2]}</span></td><td className="muted">{r[3]}</td><td><MoreHorizontal size={18}/></td></tr>)}</tbody></table>
+        </div>
+      </section>
+    </>
+  );
+}
+
+function Students({ rows }: { rows: string[][] }) {
+  return (
+    <>
+      <section className="page-heading">
+        <div><div className="eyebrow">People & Records</div><h1>Students</h1><p>Central student registry with academic status and performance overview.</p></div>
+        <button className="primary-btn"><Plus size={17}/> Add Student</button>
+      </section>
+      <div className="toolbar"><div className="filter-search"><Search size={17}/><input placeholder="Filter students..." /></div><button className="ghost-btn">Department <ChevronDown size={14}/></button><button className="ghost-btn">Section <ChevronDown size={14}/></button><button className="ghost-btn">Export <ChevronDown size={14}/></button></div>
+      <section className="panel recent-panel">
+        <div className="table-wrap"><table><thead><tr><th>Roll Number</th><th>Student</th><th>Program</th><th>Section</th><th>Status</th><th>Attendance</th><th></th></tr></thead>
+        <tbody>{rows.map((r,i)=><tr key={i}><td><strong className="mono">{r[0]}</strong></td><td><div className="student-cell"><div className="avatar small">{r[1].split(" ").map(x=>x[0]).join("")}</div><strong>{r[1]}</strong></div></td><td>{r[2]}</td><td><span className="section-pill">{r[3]}</span></td><td><span className="status"><CheckCircle2 size={14}/>{r[4]}</span></td><td><strong>{r[5]}</strong></td><td><MoreHorizontal size={18}/></td></tr>)}</tbody></table></div>
+      </section>
+    </>
+  );
+}
+
+function ModuleView({ title }: { title: string }) {
+  const descriptions: Record<string,string> = {
+    Faculty: "Faculty profiles, workload, assignments and teaching responsibilities.",
+    Courses: "Course catalog, credit hours, prerequisites and semester offerings.",
+    Sections: "Section setup, class schedules, faculty assignment and enrollment.",
+    Assessments: "Midterms, case studies, quizzes, presentations, finals and online tests.",
+    Results: "Marksheets, grades, totals, percentages, result publishing and exports.",
+    Attendance: "Attendance registers, percentages, shortages and attendance reports.",
+    Reports: "University-wide academic reports, analytics and export center.",
+    "Audit Log": "Immutable-style operational history for important administrative actions.",
+    Settings: "University configuration, academic calendar, roles and system preferences."
+  };
+  return <><section className="page-heading"><div><div className="eyebrow">HITMS Module</div><h1>{title}</h1><p>{descriptions[title]}</p></div><button className="primary-btn"><Plus size={17}/> Create New</button></section><div className="module-empty"><div className="empty-icon"><Sparkles size={28}/></div><h2>{title} module initialized</h2><p>The production data layer will be connected to Supabase in the next build phase. The navigation, layout system and module boundaries are already in place.</p><div className="build-list"><span><CheckCircle2 size={15}/> Responsive UI</span><span><CheckCircle2 size={15}/> Role-based architecture</span><span><CheckCircle2 size={15}/> PostgreSQL schema prepared</span><span><CheckCircle2 size={15}/> Cloudflare deployment ready</span></div></div></>;
+}
+
+export default App;
