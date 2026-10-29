@@ -1,0 +1,14 @@
+{
+  "project": "HITMS",
+  "version": "0.1.0-foundation",
+  "created": "2026-10-29",
+  "stack": [
+    "React",
+    "TypeScript",
+    "Vite",
+    "Supabase",
+    "PostgreSQL",
+    "Cloudflare Workers"
+  ],
+  "status": "real working foundation; demo data until Supabase is configured"
+}
